@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <Button
+        style="@style/Widget.AppCompat.Button"
+        android:id="@+id/promptButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="6dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/a_alloy_ink"
+        android:text="Actors"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>

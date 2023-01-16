@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PromptsSavedActivity"
+    android:background="@color/cardview_dark_background">
+
+    <TextView
+        android:id="@+id/prompts_saved_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/a_alloy_ink"
+        android:text="@string/prompts"
+        android:textColor="@color/purple_200"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/saved_custom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="206dp">
+
+        <Button
+            android:id="@+id/savedButton"
+            android:layout_width="150dp"
+            android:layout_height="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/rounded_button_selected"
+            android:fontFamily="@font/a_alloy_ink"
+            android:text="@string/saved"
+            android:textColor="#1E1818"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/customButton"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/customButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="59dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/savedButton"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/a_alloy_ink"
+            android:text="@string/custom"
+            android:textColor="#1E1818"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/savedButton"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_below="@id/saved_custom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/promptList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/button_list_item"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

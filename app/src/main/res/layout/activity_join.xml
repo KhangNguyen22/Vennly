@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".JoinActivity">
+
+    <TextView
+        android:id="@+id/join_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/a_alloy_ink"
+        android:text="@string/join"
+        android:textColor="@color/purple_200"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp" />
+
+    <EditText
+        android:id="@+id/player_name"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:hint="@string/player_name"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:layout_below="@id/join_title"/>
+
+    <ListView
+        android:id="@+id/room_list"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="9"
+        android:layout_below="@id/player_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/join_title"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="10"
+        android:clickable="false">
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesCustomActivity"
+    android:background="@color/cardview_dark_background">
+
+    <TextView
+        android:id="@+id/categories_custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/a_alloy_ink"
+        android:text="@string/categories"
+        android:textColor="@color/purple_200"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp" />
+
+    <LinearLayout
+        android:id="@+id/saved_custom_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categories_custom_title"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/savedButtonCategories"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/a_alloy_ink"
+            android:text="@string/saved"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeStepGranularity="2sp"
+            android:textColor="#1E1818" />
+
+        <Button
+            android:id="@+id/customButtonCategoriesSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:background="@drawable/rounded_button_purple"
+            android:fontFamily="@font/a_alloy_ink"
+            android:text="@string/custom"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeStepGranularity="2sp"
+            android:textColor="#1E1818" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextButtonCategoriesCustomSelected"
+        android:layout_width="150dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/a_alloy_ink"
+        android:text="@string/next"
+        android:textColor="#1E1818"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/category_placeholder_name"
+        android:paddingStart="@dimen/category_padding_left"
+        android:textColor="@color/white"
+        android:textColorHint="#989898"
+        android:textSize="@dimen/category_size" />
+
+    <EditText
+        android:id="@+id/textViewCategory1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/gap_between_categories"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/categoryName"
+        android:background="@drawable/rounded_button"
+        android:hint="@string/category_placeholder_1"
+        android:paddingStart="@dimen/category_padding_left"
+        android:textColorHint="#989898"
+        android:textColor="@color/black"
+        android:textSize="@dimen/category_size" />
+
+    <EditText
+        android:id="@+id/textViewCategory2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCategory1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/gap_between_categories"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button"
+        android:hint="@string/category_placeholder_2"
+        android:paddingStart="@dimen/category_padding_left"
+        android:textColorHint="#989898"
+        android:textColor="@color/black"
+        android:textSize="@dimen/category_size" />
+    <EditText
+        android:id="@+id/textViewCategory3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCategory2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/gap_between_categories"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button"
+        android:hint="@string/category_placeholder_3"
+        android:paddingStart="@dimen/category_padding_left"
+        android:textColorHint="#989898"
+        android:textColor="@color/black"
+        android:textSize="@dimen/category_size" />
+
+
+</RelativeLayout>
